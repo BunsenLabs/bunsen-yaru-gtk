@@ -8,20 +8,6 @@ It contains:
  * an icon & cursor theme, derived from the Unity8 Suru icons and [Suru icon](https://snwh.org/suru) theme
  * a sound theme, combining sounds from the [WoodenBeaver](https://github.com/madsrh/WoodenBeaver) and [Touch-Remix](https://github.com/madsrh/TouchRemix) sound themes.
 
-![FilesLight](.github/readme_pics/nautilus-light.png)
-
-![FilesDark](.github/readme_pics/nautilus-dark.png)
-
-![widgetfactorylight](.github/readme_pics/factory-light.png)
-
-![widgetfactorydark](.github/readme_pics/factory-dark.png)
-
-![ShellPopups](.github/readme_pics/shell-light.png)
-
-![ShellPopupsDark](.github/readme_pics/shell-dark.png)
-
-![Appgrid](.github/readme_pics/appgrid.png)
-
 ## Using Yaru on Ubuntu
 
 The Yaru theme suite is installed with Ubuntu 18.10+ by default! No further steps are required to use it.
