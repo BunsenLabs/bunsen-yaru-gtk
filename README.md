@@ -1,5 +1,12 @@
 # Ubuntu Yaru theme suite
 
+### Note
+
+**This fork only retains the the _GTK_ themes _bark_ and _sage_  and also
+adds corresponding _openbox-3_ and _xfce-notify_ themes.**
+
+---
+
 Yaru is the default theme for Ubuntu, backed by the community.
 
 It contains:
