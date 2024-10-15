@@ -3,8 +3,6 @@ flavours = []
 available_flavours = [
   'default',
   'dark',
-  'mate',
-  'mate-dark',
 ]
 
 foreach flavour: available_flavours

@@ -37,7 +37,7 @@ foreach flavour: flavours
 
     accent_color_code = run_command(sassc,
       sass_global_paths,
-      accent_info_css).stderr().split(' Accent color is ')[1].strip()
+      accent_info_css, check: false).stderr().split(' Accent color is ')[1].strip()
     assert(accent_color_code.startswith('#'), 'No accent color code found')
   endif
 
@@ -45,7 +45,6 @@ foreach flavour: flavours
   conf_data.set('ThemeName', meson.project_name())
   conf_data.set('FlavourThemeName', theme_name)
   conf_data.set('IconThemeName', theme_name)
-  conf_data.set('MetacityThemeName', is_dark ? '-'.join(meson.project_name(), 'dark') : meson.project_name())
   conf_data.set('DarkTheme', is_dark ? 'true' : 'false')
   conf_data.set('AccentName', is_accent ? base_theme_name : 'default')
   conf_data.set('AccentColor', is_accent ? accent_color_code : '')
@@ -58,7 +57,7 @@ foreach flavour: flavours
   # build and install gtk data
   foreach gtk_ver: gtk_versions
     gtk_dir = 'gtk-@0@'.format(gtk_ver)
-    base_path = (flavour.startswith('mate') ? base_theme_name : 'default') / gtk_dir
+    base_path = 'default' / gtk_dir
     dark_path = is_dark ? 'dark' : base_path
     default_path = 'default' / gtk_dir
     upstream_path = '..' / 'upstream' / gtk_dir / 'Default'
@@ -83,7 +82,7 @@ foreach flavour: flavours
       gtk2_sources_data = run_command(
         'find',
         rc_paths,
-        '-name', '*rc'
+        '-name', '*rc', check: false
         ).stdout().strip().split('\n')
 
       install_data(gtk2_sources_data, install_dir: install_path)
@@ -94,7 +93,7 @@ foreach flavour: flavours
       endforeach
 
       gtk2_asset_data = run_command(
-        'find', assets_paths, '-name', '*.png'
+        'find', assets_paths, '-name', '*.png', check: false
         ).stdout().strip().split('\n')
 
       install_data(gtk2_asset_data, install_dir: install_path / 'assets')
@@ -123,7 +122,7 @@ foreach flavour: flavours
         scss_paths += ['-I', meson.current_source_dir() / src ]
 
         scss_deps = run_command(
-          'find', src, '-name', '_*.scss'
+          'find', src, '-name', '_*.scss', check: false
           ).stdout().strip().split('\n')
         if scss_deps.length() > 0 and scss_deps[0] != ''
           gtk_scss_dependencies += scss_deps
@@ -196,7 +195,7 @@ foreach flavour: flavours
     endforeach
 
     assets = run_command(
-      'ls', '-1', assets_rel_dir
+      'ls', '-1', assets_rel_dir, check: false
     ).stdout().strip().split('\n')
 
     assets_xml = []
@@ -226,13 +225,6 @@ foreach flavour: flavours
       install_dir: install_path,
     )
 
-    if get_option('cinnamon-shell') and fs.is_file(flavour_path / 'thumbnail.png')
-      # install thumbnail (cinnamon only)
-      install_data(
-        flavour_path / 'thumbnail.png',
-        install_dir: install_path,
-      )
-    endif
   endforeach
 endforeach
 

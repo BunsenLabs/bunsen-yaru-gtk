@@ -1,5 +1,5 @@
 @function gtkalpha($c,$a) {
-  @return unquote("rgb(from #{$c} r g b / calc(alpha * #{$a}))");
+  @return unquote("alpha(#{$c},#{$a})");
 }
 
 $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2703,7 +2703,6 @@ scale {
   // sizing
   $_marks_length: 6px;
   $_marks_distance: 6px;
-  $_marks_size: $_marks_length + $_marks_distance;
 
   min-height: 10px;
   min-width: 10px;
@@ -2861,14 +2860,6 @@ scale {
         min-height: 1px;
         min-width: $_marks_length;
       }
-    }
-
-    &:not(.marks-before) {
-      > value.left { margin-right: $_marks_size; }
-    }
-
-    &:not(.marks-after) {
-      > value.right { margin-left: $_marks_size; }
     }
 
     > value.top    { margin-bottom: 9px; }
@@ -3948,6 +3939,9 @@ video {
     min-width: 64px;
     min-height: 64px;
     border-radius: 32px;
+  }
+  & graphicsoffload > picture {
+    background: black;
   }
 }
 

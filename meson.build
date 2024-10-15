@@ -1,7 +1,7 @@
-project('Yaru',
-        version: '24.10.4',
-        meson_version: '>= 0.60',
-        license : ['GPL3', 'CC BY-SA 4.0'],
+project('bunsen-yaru',
+        version: '0.1.0',
+        meson_version: '>= 1.4',
+        license : ['GPL3'],
         default_options: ['prefix=/usr'])
 
 fs = import('fs')
@@ -13,16 +13,9 @@ sassc = find_program('sassc')
 subdir('common')
 
 components = [
-  'metacity',
-  'gnome-shell',
   'gtk',
-  'icons',
-  'gtksourceview',
-  'sounds',
-  'sessions',
-  'ubuntu-unity',
-  'xfwm4',
-  'cinnamon-shell',
+  'openbox',
+  'xfce-notify',
 ]
 
 enabled_accent_colors = get_option('accent-colors')
