@@ -1,36 +1,25 @@
-# Ubuntu Yaru theme suite
+# BunsenLabs Yaru GTK themes
 
-### Note
+**This is a fork of the [Ubuntu Yaru theme suite](https://github.com/ubuntu/yaru) which retains only the _GTK_ themes _bark_ and _sage_,
+and also adds corresponding _openbox-3_ and _xfce-notify_ themes.**
 
-**This fork only retains the the _GTK_ themes _bark_ and _sage_  and also
-adds corresponding _openbox-3_ and _xfce-notify_ themes.**
+The GitHub repository is here:
+https://github.com/BunsenLabs/bunsen-yaru-gtk
 
 ---
 
 Yaru is the default theme for Ubuntu, backed by the community.
+For more information about Yaru, see README.upstream.md
 
-It contains:
- * a GNOME Shell theme based on the [upstream GNOME shell theme](https://github.com/GNOME/gnome-shell/tree/master/data/theme)
- * a light and dark GTK theme (gtk2 and gtk3) based on the [upstream Adwaita Gtk theme](https://github.com/GNOME/gtk/tree/gtk-3-24/gtk/theme/Adwaita)
- * an icon & cursor theme, derived from the Unity8 Suru icons and [Suru icon](https://snwh.org/suru) theme
- * a sound theme, combining sounds from the [WoodenBeaver](https://github.com/madsrh/WoodenBeaver) and [Touch-Remix](https://github.com/madsrh/TouchRemix) sound themes.
-
-## Using Yaru on Ubuntu
-
-The Yaru theme suite is installed with Ubuntu 18.10+ by default! No further steps are required to use it.
-
-_Installing from source is not recommended for average usage!_
-
-## Copying or Reusing
+---
 
 This project has mixed licencing. You are free to copy, redistribute and/or modify aspects of this work under the terms of each licence accordingly (unless otherwise specified).
 
-The Yaru icon assets (any and all source `.svg` files or rendered `.png` files) are licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).
+---
 
-Included scripts are free software licensed under the terms of the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
+# Contributions and bug reports:
 
-## I want to be part of it!
+Bugs can be reported either in the GitHub [Issues](https://github.com/BunsenLabs/bunsen-yaru-gtk/issues)
+or in the BunsenLabs Forum [Bug Reports](https://forums.bunsenlabs.org/viewforum.php?id=14)
 
-Great, we're looking forward to your PR!
-
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) to figure out how to get started.
+Suggestions for improvement of any BunsenLabs packages are welcome in the forum [Development & Suggestions](https://forums.bunsenlabs.org/viewforum.php?id=13)
