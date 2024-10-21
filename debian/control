@@ -5,6 +5,9 @@ Maintainer: hhh <hsumen@bunsenlabs.org>
 Build-Depends: debhelper-compat (= 13), libglib2.0-dev, meson (>= 1.4), libxml2-utils, sassc
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
+Homepage: https://github.com/bunsenlabs/bunsen-yaru-gtk
+Vcs-Browser: https://github.com/bunsenlabs/bunsen-yaru-gtk
+Vcs-Git: https://github.com/BunsenLabs/bunsen-yaru-gtk.git
 
 Package: bunsen-yaru-gtk
 Architecture: all

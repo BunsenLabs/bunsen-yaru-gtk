@@ -1,17 +1,25 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: yaru
-Source: https://github.com/ubuntu/yaru
-Files-Excluded: .github
+Upstream-Name: bunsen-yaru-gtk
+Source: https://github.com/BunsenLabs/bunsen-yaru-gtk
 
 Files: *
-Copyright: 2017-2018, Canonical Ltd.
-           2009-2015, Red Hat, Inc.
-           2009, Intel Corporation
-           2015, Руслан Ижбулатов <lrn1986@gmail.com>
+Copyright: 2017-2018 Canonical Ltd.
+           2009-2015 Red Hat, Inc.
+           2009 Intel Corporation
+           2015 Руслан Ижбулатов <lrn1986@gmail.com>
+           2024 hhh <hsumen@bunsenlabs.org>
+           2024 Michael Amadio <01micko@gmail.com>
 License: GPL-3.0+
 
+Files: common/colorize-dummy-svg.py
+       common/sass-utils.scss
+       common/test-sass-utils.scss
+Copyright: 2020, 2022 Canonical Ltd.
+License: LGPL-2.1+
+
 Files: debian/*
-Copyright: 2024, hhh <hsumen@bunsenlabs.org>
+Copyright: 2024 hhh <hsumen@bunsenlabs.org>
+           2024 Michael Amadio <01micko@gmail.com>
 License: GPL-3.0+
 
 License: GPL-3.0+
@@ -30,3 +38,22 @@ License: GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2.1+
+ This program is free software; you can redistribute it and/or modify it
+ under the terms and conditions of the GNU Lesser General Public License;
+ either version 2.1 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program; if not, write to the Free Software Foundation,
+ Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ "/usr/share/common-licenses/LGPL-2.1".
