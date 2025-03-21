@@ -1,3 +1,11 @@
+bunsen-yaru-gtk (13.0.1-1) carbon; urgency=medium
+
+  * Non-maintainer upload.
+  * [hhh] Improve openbox light themes.
+          Add xfce4-notify light themes.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 21 Mar 2025 15:06:29 +0900
+
 bunsen-yaru-gtk (13.0-1) carbon; urgency=low
 
   * Initial release for BL carbon.
