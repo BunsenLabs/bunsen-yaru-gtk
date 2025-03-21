@@ -1,7 +1,9 @@
 flavours = []
 
 available_flavours = [
+  'bark',
   'bark-dark',
+  'sage',
   'sage-dark',
 ]
 
